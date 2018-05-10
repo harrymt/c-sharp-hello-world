@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace HelloWorld
 {
@@ -18,9 +19,9 @@ namespace HelloWorld
             EmptyStrings();
             Interpolation();
             Concatenation();
+            UseStringBuilderForComplexConcats();
         }
-
-
+        
         public void StartsNull()
         {
             string startsNull; // null
@@ -51,6 +52,18 @@ namespace HelloWorld
             string age = "24 years";
             string sentence = name + joiner + age;
             Console.WriteLine(sentence);
+        }
+
+        public void UseStringBuilderForComplexConcats()
+        {
+            string name = "Harry";
+            string surname = "Mumford-Turner";
+            string dog = "bernie";
+            StringBuilder sb = new StringBuilder();
+            sb.Append(name)
+                .Append(surname)
+                .Append(dog);
+            Console.WriteLine(sb.ToString());
         }
     }
 }
