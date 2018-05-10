@@ -7,6 +7,20 @@ class Program
     {
         new Strings();
         new DateTimes();
+        new Other();
         Console.Read();
+    }
+}
+
+class Other { 
+    public Other()
+    {
+        GetCodeNameWithNameOf();
+    }
+
+    void GetCodeNameWithNameOf()
+    {
+        Console.WriteLine(nameof(Other));
+        Console.WriteLine(nameof(GetCodeNameWithNameOf));
     }
 }
