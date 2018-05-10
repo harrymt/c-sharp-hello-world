@@ -14,21 +14,21 @@ class Strings
         HasNormalBuiltIns();
     }
 
-    public void StartsNull()
+    void StartsNull()
     {
         string startsNull; // null
         startsNull = "a value";
         Console.WriteLine($"Strings start null, but can be assigned {startsNull}");
     }
 
-    public void EmptyStrings()
+    void EmptyStrings()
     {
         string empty = "";
         string alsoEmpty = String.Empty;
         Console.WriteLine($"Use String.Empty for empty strings {empty == alsoEmpty}");
     }
 
-    public void Interpolation()
+    void Interpolation()
     {
         var name = "Harry";
         Console.WriteLine($"Hello everyone, my name is {name}!");
@@ -37,7 +37,7 @@ class Strings
         Console.WriteLine($"My surname is {anotherName}");
     }
 
-    public void Concatenation()
+    void Concatenation()
     {
         string name = "Harry";
         string joiner = " is ";
@@ -46,7 +46,7 @@ class Strings
         Console.WriteLine(sentence);
     }
 
-    public void UseStringBuilderForComplexConcats()
+    void UseStringBuilderForComplexConcats()
     {
         string name = "Harry";
         string surname = "Mumford-Turner";
@@ -58,7 +58,7 @@ class Strings
         Console.WriteLine(sb.ToString());
     }
 
-    public void HasNormalBuiltIns()
+    void HasNormalBuiltIns()
     {
         string upper = "make me upper case".ToUpper();
         string lower = "MAKE ME LOWER CASE".ToLower();
