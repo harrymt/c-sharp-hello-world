@@ -20,6 +20,7 @@ namespace HelloWorld
             Interpolation();
             Concatenation();
             UseStringBuilderForComplexConcats();
+            HasNormalBuiltIns();
         }
         
         public void StartsNull()
@@ -64,6 +65,15 @@ namespace HelloWorld
                 .Append(surname)
                 .Append(dog);
             Console.WriteLine(sb.ToString());
+        }
+
+        public void HasNormalBuiltIns()
+        {
+            string upper = "make me upper case".ToUpper();
+            string lower = "MAKE ME LOWER CASE".ToLower();
+            string has = " has ".Trim();
+            string usual = "usual   ".TrimEnd();
+            string padding = " padding functions".TrimStart();
         }
     }
 }
