@@ -8,6 +8,7 @@ class Program
         new Strings();
         new DateTimes();
         new Other();
+        new ControlFlow();
         Console.Read();
     }
 }
