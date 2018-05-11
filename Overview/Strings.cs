@@ -26,6 +26,11 @@ class Strings
         string empty = "";
         string alsoEmpty = String.Empty;
         Console.WriteLine($"Use String.Empty for empty strings {empty == alsoEmpty}");
+
+        if (String.IsNullOrEmpty(empty))
+        {
+            Console.WriteLine($"Static methods for checking if strings are both null or empty");
+        }
     }
 
     void Interpolation()
