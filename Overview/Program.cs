@@ -1,4 +1,5 @@
 ﻿using System;
+using Overview.Game;
 
 namespace Overview
 {
@@ -17,7 +18,14 @@ namespace Overview
         private static void Main(string[] args)
         {
             EnableBreakdown(false);
+            var game = new Game.Solitare();
 
+            Player[] players =
+            {
+                new Player("Harry"),
+                new Player("Enemy")
+            };
+            game.Start(players);
         }
     }
 }
