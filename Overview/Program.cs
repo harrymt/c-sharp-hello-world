@@ -2,18 +2,22 @@
 
 namespace Overview
 {
-    class Program
+    internal class Program
     {
+        private static void EnableBreakdown(bool enable)
+        {
+            if (!enable) return;
+            var b = new Breakdown.Breakdown();
+            Console.Read();
+        }
+
         /// <summary>
         /// Entry point of the application.
         /// </summary>
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            new Strings();
-            new DateTimes();
-            new Types();
-            new ControlFlow();
-            Console.Read();
+            EnableBreakdown(false);
+
         }
     }
 }
